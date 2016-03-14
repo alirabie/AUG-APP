@@ -1,0 +1,47 @@
+[
+  {
+    "name":"ZURCAL",
+    "picName":"pic.ico",
+    "items":[
+      {
+        "name":"1 Zurcal Front Page",
+        "img":"z1.jpg"
+      },  {
+        "name":"2 Bioavilabilty + Binding Site",
+        "img":"z2.jpg"
+      },  {
+        "name":"3 Organ Selectivity",
+        "img":"z3.jpg"
+      },{
+        "name":"4 Drug Drug Interaction",
+        "img":"z4.jpg"
+      },{
+        "name":"5 Versus Esmoprazole",
+        "img":"z5.jpg"
+      },{
+        "name":"6 Versus Omeprazole",
+        "img":"z6.jpg"
+      },{
+        "name":"7 Zurcal Vial + EDTA",
+        "img":"z7.jpg"
+      },{
+        "name":"8 Zurcal Indications",
+        "img":"z8.jpg"
+      }
+    ]
+  },
+  {
+    "name": "G-SAC",
+    "picName": "pic.ico",
+    "items": [
+      {
+        "name": "1 G-Sac FrontPage",
+        "img": "g1.jpg"
+      },
+      {
+        "name": "2 G-sac Components",
+        "img": "g2.jpg"
+      }
+    ]
+  }
+]

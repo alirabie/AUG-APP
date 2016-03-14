@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:text="item 1"
+    android:layout_height="wrap_content"
+    android:textColor="#f18324"
+    android:padding="12dp"
+    android:textSize="25sp"
+    android:button="@drawable/custom_checkbox"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="#f3f0f0"
+    android:checked="false"
+    android:id="@+id/itmch"
+    android:allowUndo="false">
+
+
+</CheckBox>

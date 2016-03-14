@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/g2"
+    android:id="@+id/imglaayout"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:focusable="false">
+
+
+    TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/picnmame"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#aeaeae"
+        android:text="Test" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgs"
+        android:layout_gravity="center"
+        android:src="@drawable/g2" />
+</LinearLayout>
+
+
+

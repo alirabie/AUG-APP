@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffff">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageView12"
+                android:src="@drawable/sideicon"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView10"
+                android:src="@drawable/user"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/list"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ex2"
+                android:src="@drawable/exit"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/vidpic"
+                android:layout_gravity="right"
+                android:src="@drawable/v"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/next"
+                android:src="@drawable/farrw"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:layout_gravity="start"
+    android:background="@color/colorPrimary">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:src="@drawable/gg"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sidelist"
+        android:layout_width="200dp"
+        android:paddingTop="20dp"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorPrimary"
+        android:layout_weight="2">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goside"
+        android:src="@drawable/go" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
