@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+    //Get Data From Gson file
 
     private List<Cat> getData(){///auto JSON Parsing using GSON
         return new Gson().fromJson(getDataJson(), new TypeToken<List<Cat>>(){}.getType());
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private String getDataJson(){//method to get string (json) from assets folder
+    private String getDataJson(){   //method to get string (json) from assets folder
         StringBuilder buf=new StringBuilder();
         BufferedReader in=null;
         try {
