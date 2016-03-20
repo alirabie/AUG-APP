@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="examplew.midopc.aug_app">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -38,7 +40,8 @@
         <activity
             android:name=".ItemsFromside"
             android:label="@string/title_activity_items_fromside"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Browser.FileBrawserActiv"></activity>
     </application>
 
 </manifest>

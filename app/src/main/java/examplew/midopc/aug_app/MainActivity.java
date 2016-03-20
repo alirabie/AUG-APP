@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -20,6 +21,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import examplew.midopc.aug_app.IO.IO_Util;
 import examplew.midopc.aug_app.POJO.Cat;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cats);
+
+        IO_Util.init(getApplicationContext());
+
+        Log.d("sssssssssss", getApplicationContext().getFilesDir().getPath());
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -92,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     //Get Data From Gson file
 
     private List<Cat> getData(){///auto JSON Parsing using GSON
-        return new Gson().fromJson(getDataJson(), new TypeToken<List<Cat>>(){}.getType());
+        return new Gson().fromJson(IO_Util.getInstance().getJsonData(), new TypeToken<List<Cat>>(){}.getType());
     }
 
 

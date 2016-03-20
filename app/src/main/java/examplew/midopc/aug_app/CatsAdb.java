@@ -1,7 +1,9 @@
 package examplew.midopc.aug_app;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+import examplew.midopc.aug_app.IO.IO_Util;
 import examplew.midopc.aug_app.POJO.Cat;
 
 /**
@@ -43,9 +46,19 @@ public class CatsAdb extends RecyclerView.Adapter<CatsAdb.CatVH> {
                 cat.setChecked(isChecked);
             }
         });
-        Picasso.with(context)
-                .load("file:///android_asset/cat/pics/"+cat.getPicName())
+        Picasso.Builder builder = new Picasso.Builder(context);
+        builder.listener(new Picasso.Listener() {
+            @Override
+            public void onImageLoadFailed(Picasso picasso, Uri uri, Exception exception) {
+                Log.e("Picasso EROOOOOOOR",exception.getMessage());
+                exception.printStackTrace();
+
+            }
+        });
+        builder.build()
+                .load(IO_Util.getInstance().getCatPic(cat.getPicName()))
                 .into(holder.imageView);
+        Log.d("Pathhhhhhhhhhhhhhhhh",IO_Util.getInstance().getCatPic(cat.getPicName()).getPath());
 
     }
     public List<Cat> getCheckedData(){

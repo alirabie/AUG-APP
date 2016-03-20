@@ -3,4 +3,7 @@
     <string name="title_activity_splash">AUG Purchours</string>
     <string name="title_activity_video">Video</string>
     <string name="title_activity_items_fromside">Categories</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
